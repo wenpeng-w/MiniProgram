@@ -1,31 +1,56 @@
 //index.js
+var QQMapWX = require('../../libs/qqmap-wx-jssdk.js')
+var qqmapsdk
 //获取应用实例
 const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    point: {
-      latitude: '',
-      longitude: '',
-      address: ''
-    }
+    nation: '',
+    city: '',
+    userInfo: {}
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  onReady () {
+    console.log('页面初始化完成')
+    setTimeout(() => {
+      // wx.redirectTo({
+      //   url: '../logs/logs'
+      // })
+    }, 3000)
   },
   onLoad: function () {
+    qqmapsdk = new QQMapWX({
+      key: '*********' // 开发秘钥
+    })
+    // 获取用户位置
     wx.getLocation({
       success: res => {
-        this.setData({
-          'point.latitude': res.latitude,
-          'point.longitude': res.longitude,
-          'point.address': res.accuracy
+        qqmapsdk.reverseGeocoder({
+          location: {
+            latitude: res.latitude,
+            longitude: res.longitude
+          },
+          success: res => {
+            this.setData({
+              'nation': res.result.address_component.nation,
+              'city': res.result.address_component.city.replace(/[市]+$/, '')
+            })
+          },
+          fail: res => {
+            console.log(res)
+          }
         })
       },
+    })
+    // 获取用户基本信息
+    wx.getUserInfo({
+      lang: 'zh_CN',
+      success: res => {
+        console.log(res.userInfo)
+        this.setData({
+          'userInfo': res.userInfo
+        })
+      }
     })
   }
 })

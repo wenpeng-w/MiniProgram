@@ -1,9 +1,10 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="usermotto">
-    <text class="user-motto">{{point.latitude}} {{point.longitude}}</text>
-  </view>
-  <view>
-    <text>{{point.address}}</text>
+<view class="container startup-page">
+  <view class="origin">
+    <image class='origin-pic' mode='aspectFit' src='../../images/xcx.png'></image>
+    <view class='user-info'>
+      <image class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
+      <text class="user-address">{{nation}} · {{city}}</text>
+    </view>
   </view>
 </view>
