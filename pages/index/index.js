@@ -6,16 +6,16 @@ const app = getApp()
 
 Page({
   data: {
-    nation: '',
+    country: '',
     city: '',
     userInfo: {}
   },
   onReady () {
     console.log('页面初始化完成')
     setTimeout(() => {
-      // wx.redirectTo({
-      //   url: '../logs/logs'
-      // })
+      wx.redirectTo({
+        url: '../logs/logs'
+      })
     }, 3000)
   },
   onLoad: function () {
@@ -32,25 +32,27 @@ Page({
           },
           success: res => {
             this.setData({
-              'nation': res.result.address_component.nation,
+              'country': res.result.address_component.nation,
               'city': res.result.address_component.city.replace(/[市]+$/, '')
             })
           },
           fail: res => {
             console.log(res)
+            // 获取用户基本信息
+            wx.getUserInfo({
+              lang: 'zh_CN',
+              success: res => {
+                console.log(res.userInfo)
+                this.setData({
+                  'userInfo': res.userInfo,
+                  'country': res.userInfo.country,
+                  'city': res.userInfo.province
+                })
+              }
+            })
           }
         })
       },
-    })
-    // 获取用户基本信息
-    wx.getUserInfo({
-      lang: 'zh_CN',
-      success: res => {
-        console.log(res.userInfo)
-        this.setData({
-          'userInfo': res.userInfo
-        })
-      }
     })
   }
 })

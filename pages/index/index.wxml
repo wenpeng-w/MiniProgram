@@ -4,7 +4,7 @@
     <image class='origin-pic' mode='aspectFit' src='../../images/xcx.png'></image>
     <view class='user-info'>
       <image class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
-      <text class="user-address">{{nation}} · {{city}}</text>
+      <text class="user-address">{{country}} · {{city}}</text>
     </view>
   </view>
 </view>
