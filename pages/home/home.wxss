@@ -5,3 +5,6 @@
   line-height: 4.6;
   color: #666;
 }
+.home-page {
+  padding: 0;
+}

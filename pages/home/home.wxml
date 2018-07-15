@@ -1,4 +1,4 @@
 <!--home.wxml-->
-<view class="container log-list">
+<view class="container home-page">
   <text class="text">首页</text>
 </view>
