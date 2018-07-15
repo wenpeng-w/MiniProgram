@@ -3,7 +3,8 @@
     "pages/my/my",
     "pages/index/index",
     "pages/home/home",
-    "pages/trace/trace"
+    "pages/trace/trace",
+    "pages/personal/personal"
   ],
   "window":{
     "backgroundTextStyle":"light",
