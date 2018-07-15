@@ -1,13 +1,14 @@
 {
   "pages":[
+    "pages/my/my",
     "pages/index/index",
     "pages/home/home",
-    "pages/trace/trace",
-    "pages/my/my"
+    "pages/trace/trace"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#333",
+    "navigationBarBackgroundColor": "#333333",
+    "backgroundColor": "#f5f5f5",
     "navigationBarTitleText": "唔嗯文",
     "navigationBarTextStyle":"white"
   },

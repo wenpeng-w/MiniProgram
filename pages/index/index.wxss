@@ -1,6 +1,7 @@
 /**index.wxss**/
 .startup-page {
   padding: 300rpx 0 100rpx 0;
+  background-color: #ffffff;
 }
 .origin {
   height: 100%;

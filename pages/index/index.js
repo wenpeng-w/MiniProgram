@@ -29,12 +29,10 @@ Page({
             })
           },
           fail: res => {
-            console.log(res)
             // 获取用户基本信息
             wx.getUserInfo({
               lang: 'zh_CN',
               success: res => {
-                console.log(res.userInfo)
                 this.setData({
                   'userInfo': res.userInfo,
                   'country': res.userInfo.country,

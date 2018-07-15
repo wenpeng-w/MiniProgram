@@ -1,6 +1,53 @@
 <!--my.wxml-->
-<view>
-  <view>
-  
+<view class="my-page">
+  <view class="my-info-panel">
+    <image class="my-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view class="my-info">
+      <text class="nickname">{{userInfo.nickName}}</text>
+      <view class="my-location"><text>{{userInfo.province}}</text> · <text>{{userInfo.city}}</text></view>
+    </view>
+    <view class="link-icon"></view>
+  </view>
+  <!-- 列表面板 -->
+  <view class="list-panel">
+    <view class="item">
+      <image class="item-icon"></image>
+      <text class="item-title">收藏</text>
+      <span class="item-link-icon"></span>
+    </view>
+    <view class="item">
+      <image class="item-icon"></image>
+      <text class="item-title">收藏</text>
+      <span class="item-link-icon"></span>
+    </view>
+  </view>
+  <view class="list-panel">
+    <view class="item">
+      <image class="item-icon"></image>
+      <text class="item-title">收藏</text>
+      <span class="item-link-icon"></span>
+    </view>
+    <view class="item">
+      <image class="item-icon"></image>
+      <text class="item-title">收藏</text>
+      <span class="item-link-icon"></span>
+    </view>
+    <view class="item">
+      <image class="item-icon"></image>
+      <text class="item-title">收藏</text>
+      <span class="item-link-icon"></span>
+    </view>
+  </view>
+  <view class="list-panel">
+    <view class="item">
+      <image class="item-icon"></image>
+      <text class="item-title">收藏</text>
+      <span class="item-link-icon"></span>
+    </view>
+    <view class="item">
+      <image class="item-icon"></image>
+      <text class="item-title">收藏</text>
+      <span class="item-link-icon"></span>
+    </view>
   </view>
 </view>
