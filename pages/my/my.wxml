@@ -10,14 +10,9 @@
   </view>
   <!-- 列表面板 -->
   <view class="list-panel">
-    <view class="item">
-      <image class="item-icon"></image>
-      <text class="item-title">收藏</text>
-      <span class="item-link-icon"></span>
-    </view>
-    <view class="item">
-      <image class="item-icon"></image>
-      <text class="item-title">收藏</text>
+    <view wx:for="{{list_01}}" class="item">
+      <image class="item-icon" src="{{item.iconUrl}}"></image>
+      <text class="item-title">{{item.name}}</text>
       <span class="item-link-icon"></span>
     </view>
   </view>

@@ -4,7 +4,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: {}
+    userInfo: {},
+    list_01: [
+      {
+        "iconUrl": "",
+        "name": "扫一扫"
+      }, {
+        "iconUrl": "",
+        "name": "通讯录"
+      }, {
+        "iconUrl": "",
+        "name": "收藏"
+      }
+    ]
   },
 
   /**
