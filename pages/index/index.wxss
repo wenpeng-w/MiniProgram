@@ -10,7 +10,7 @@
   align-items: center;
 }
 .origin-pic {
-  width: 400rpx;
+  width: 340rpx;
   height: 80rpx;
 }
 .user-info {

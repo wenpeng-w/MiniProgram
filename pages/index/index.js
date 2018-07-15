@@ -10,14 +10,6 @@ Page({
     city: '',
     userInfo: {}
   },
-  onReady () {
-    console.log('页面初始化完成')
-    setTimeout(() => {
-      wx.redirectTo({
-        url: '../logs/logs'
-      })
-    }, 3000)
-  },
   onLoad: function () {
     qqmapsdk = new QQMapWX({
       key: '*********' // 开发秘钥

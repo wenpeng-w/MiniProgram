@@ -1,12 +1,38 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/home",
+    "pages/trace/trace",
+    "pages/my/my"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#000",
+    "navigationBarBackgroundColor": "#333",
     "navigationBarTitleText": "唔嗯文",
-    "navigationBarTextStyle":"#fff"
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/qrcode.png",
+      "selectedIconPath": "images/qrcode.png",
+      "text": "小程序"
+    },{
+      "pagePath": "pages/home/home",
+      "iconPath": "images/sy_icon.png",
+      "selectedIconPath": "images/sy_icon_selected.png",
+      "text": "首页"
+    },{
+      "pagePath": "pages/trace/trace",
+      "iconPath": "images/lx_icon.png",
+      "selectedIconPath": "images/lx_icon_selected.png",
+      "text": "足迹"
+    },{
+      "pagePath": "pages/my/my",
+      "iconPath": "images/my_icon.png",
+      "selectedIconPath": "images/my_icon_selected.png",
+      "text": "我的"
+    }]
   }
 }
