@@ -9,12 +9,34 @@ Page({
       {
         "iconUrl": "",
         "name": "扫一扫"
-      }, {
+      },
+      {
         "iconUrl": "",
         "name": "通讯录"
-      }, {
+      },
+      {
         "iconUrl": "",
         "name": "收藏"
+      },
+      {
+        "iconUrl": "",
+        "name": "发现"
+      },
+      {
+        "iconUrl": "",
+        "name": "卡卷"
+      },
+      {
+        "iconUrl": "",
+        "name": "我的小程序码"
+      },
+      {
+        "iconUrl": "",
+        "name": "版本"
+      },
+      {
+        "iconUrl": "",
+        "name": "关于唔嗯文"
       }
     ]
   },
