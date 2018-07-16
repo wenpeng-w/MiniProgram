@@ -1,1 +1,4 @@
 /* pages/QRCodeResult/QRCodeResult.wxss */
+text {
+  word-break: break-all;
+}

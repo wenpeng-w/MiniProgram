@@ -55,7 +55,7 @@ Page({
           success: res => {
             console.log(res)
             wx.navigateTo({
-              url: "../QRCodeResult/QRCodeResult"
+              url: "../QRCodeResult/QRCodeResult?res=" + JSON.stringify(res)
             })
           }
         })

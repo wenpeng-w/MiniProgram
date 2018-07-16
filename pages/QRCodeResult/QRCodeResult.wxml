@@ -1,4 +1,4 @@
 <!--pages/QRCodeResult/QRCodeResult.wxml-->
 <view>
-  <text>pages/QRCodeResult/QRCodeResult.wxml</text>
+  <text>{{result}}</text>
 </view>
