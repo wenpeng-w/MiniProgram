@@ -1,2 +1,4 @@
 <!--pages/QRCodeResult/QRCodeResult.wxml-->
-<text>pages/QRCodeResult/QRCodeResult.wxml</text>
+<view>
+  <text>pages/QRCodeResult/QRCodeResult.wxml</text>
+</view>
