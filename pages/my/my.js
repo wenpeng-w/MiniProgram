@@ -7,40 +7,66 @@ Page({
     userInfo: {},
     list_01: [
       {
-        "iconUrl": "",
-        "name": "扫一扫"
+        "iconUrl": "./images/sys_icon.png",
+        "name": "扫一扫",
+        "type": 1
       },
       {
-        "iconUrl": "",
-        "name": "通讯录"
-      },
+        "iconUrl": "./images/txl_icon.png",
+        "name": "通讯录",
+        "type": 2
+      }
+    ],
+    list_02: [
       {
-        "iconUrl": "",
+        "iconUrl": "./images/sc_icon.png",
         "name": "收藏"
       },
       {
-        "iconUrl": "",
+        "iconUrl": "./images/fx_icon.png",
         "name": "发现"
       },
       {
-        "iconUrl": "",
+        "iconUrl": "./images/kj_icon.png",
         "name": "卡卷"
+      }
+    ],
+    list_03: [
+      {
+        "iconUrl": "./images/QRCode_icon.png",
+        "name": "小程序码"
       },
       {
-        "iconUrl": "",
-        "name": "我的小程序码"
-      },
-      {
-        "iconUrl": "",
-        "name": "版本"
-      },
-      {
-        "iconUrl": "",
+        "iconUrl": "./images/sm_icon.png",
         "name": "关于唔嗯文"
+      },
+      {
+        "iconUrl": "./images/ver_icon.png",
+        "name": "版本信息"
       }
     ]
   },
-
+  onAction: (e) => {
+    switch (e.currentTarget.dataset.types) {
+      case 1:
+        console.log('调用扫一扫')
+        wx.scanCode({
+          scanType: ["qrCode", "barCode", "datamatrix", "pdf417"],
+          success: res => {
+            console.log(res)
+            wx.navigateTo({
+              url: "../QRCodeResult/QRCodeResult"
+            })
+          }
+        })
+        break
+      case 2:
+        console.log('调用通讯录')
+        break
+      default:
+        console.log('没有监听到事件类型')
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -70,7 +96,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
   },
 
   /**
