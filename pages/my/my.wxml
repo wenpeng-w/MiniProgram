@@ -10,24 +10,30 @@
   </view>
   <!-- 列表面板 -->
   <view class="list-panel">
-    <view bindtap="onAction" data-types="{{item.type}}" wx:for="{{list_01}}" wx:key="index" class="item">
-      <image class="item-icon" src="{{item.iconUrl}}"></image>
-      <text class="item-title">{{item.name}}</text>
-      <span class="item-link-icon"></span>
-    </view>
+    <navigator url="{{item.url}}" wx:for="{{list_01}}" data-types="{{item.type}}" wx:key="index" hover-start-time="50" hover-stay-time="300" hover-class="hover-item" class="item">
+      <view class="item-inner">
+        <image class="item-icon" src="{{item.iconUrl}}"></image>
+        <text class="item-title">{{item.name}}</text>
+        <span class="item-link-icon"></span>
+      </view>
+    </navigator>
   </view>
   <view class="list-panel">
-    <view wx:for="{{list_02}}" wx:key="index" class="item">
-      <image class="item-icon" src="{{item.iconUrl}}"></image>
-      <text class="item-title">{{item.name}}</text>
-      <span class="item-link-icon"></span>
-    </view>
+    <navigator wx:for="{{list_02}}" wx:key="index" hover-start-time="50" hover-stay-time="300" hover-class="hover-item" class="item">
+      <view class="item-inner">
+        <image class="item-icon" src="{{item.iconUrl}}"></image>
+        <text class="item-title">{{item.name}}</text>
+        <span class="item-link-icon"></span>
+      </view>
+    </navigator>
   </view>
   <view class="list-panel">
-    <view wx:for="{{list_03}}" wx:key="index" class="item">
-      <image class="item-icon" src="{{item.iconUrl}}"></image>
-      <text class="item-title">{{item.name}}</text>
-      <span class="item-link-icon"></span>
-    </view>
+    <navigator wx:for="{{list_03}}" wx:key="index" hover-start-time="50" hover-stay-time="300" hover-class="hover-item" class="item">
+      <view class="item-inner">
+        <image class="item-icon" src="{{item.iconUrl}}"></image>
+        <text class="item-title">{{item.name}}</text>
+        <span class="item-link-icon"></span>
+      </view>
+    </navigator>
   </view>
 </view>

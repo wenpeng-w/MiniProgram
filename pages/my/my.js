@@ -9,6 +9,7 @@ Page({
       {
         "iconUrl": "./images/sys_icon.png",
         "name": "扫一扫",
+        "url": "../QRCodeResult/QRCodeResult",
         "type": 1
       },
       {
@@ -46,27 +47,27 @@ Page({
       }
     ]
   },
-  onAction: (e) => {
-    switch (e.currentTarget.dataset.types) {
-      case 1:
-        console.log('调用扫一扫')
-        wx.scanCode({
-          scanType: ["qrCode", "barCode", "datamatrix", "pdf417"],
-          success: res => {
-            console.log(res)
-            wx.navigateTo({
-              url: "../QRCodeResult/QRCodeResult?res=" + JSON.stringify(res)
-            })
-          }
-        })
-        break
-      case 2:
-        console.log('调用通讯录')
-        break
-      default:
-        console.log('没有监听到事件类型')
-    }
-  },
+  // onAction: (e) => {
+  //   switch (e.currentTarget.dataset.types) {
+  //     case 1:
+  //       console.log('调用扫一扫')
+  //       wx.scanCode({
+  //         scanType: ["qrCode", "barCode", "datamatrix", "pdf417"],
+  //         success: res => {
+  //           console.log(res)
+  //           wx.navigateTo({
+  //             url: "../QRCodeResult/QRCodeResult?res=" + JSON.stringify(res)
+  //           })
+  //         }
+  //       })
+  //       break
+  //     case 2:
+  //       console.log('调用通讯录')
+  //       break
+  //     default:
+  //       console.log('没有监听到事件类型')
+  //   }
+  // },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -35,19 +35,22 @@
 }
 
 .list-panel {
-  padding-left: 30rpx;
   margin-bottom: 30rpx;
   border-top: 1rpx solid #f0f0f0;
   border-bottom: 1rpx solid #f0f0f0;
   background-color: #ffffff;
 }
 .item {
+  padding: 0 30rpx;
+}
+.item-inner {
   position: relative;
+  padding: 20rpx 30rpx 20rpx 0;
+  margin-right: -30rpx;
   display: flex;
   align-items: center;
-  padding: 20rpx 30rpx 20rpx 0;
 }
-.item::before {
+.item-inner::before {
   display: block;
   content: "";
   width: 100%;
@@ -55,23 +58,22 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  border-bottom: 1rpx solid #d5d5d5;
+  border-top: 1rpx solid #dfdfdf;
 }
-.item:active {
-  margin-left: -30rpx;
-  padding-left: 30rpx;
-  background-color: #d5d5d5;
-  transition-property: background-color;
-  transition-delay: 0.02s;
+.item:last-child .item-inner::before {
+  display: none;
 }
-.item:last-child::before {
-  border: none;
+.hover-item {
+  background-color: #dfdfdf;
+}
+.hover-item .item-inner {
+  margin-top: -1rpx;
+  padding-top: 22rpx;
 }
 .item .item-icon {
   width: 60rpx;
   height: 60rpx;
-  margin-right: 30rpx; 
-  /* background-color: #333333; */
+  margin-right: 30rpx;
 }
 .item .item-title {
   flex: 1;
