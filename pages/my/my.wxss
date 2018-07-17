@@ -61,6 +61,8 @@
   margin-left: -30rpx;
   padding-left: 30rpx;
   background-color: #d5d5d5;
+  transition-property: background-color;
+  transition-delay: 0.02s;
 }
 .item:last-child::before {
   border: none;
