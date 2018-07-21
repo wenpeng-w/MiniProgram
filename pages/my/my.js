@@ -35,6 +35,7 @@ Page({
     list_03: [
       {
         "iconUrl": "./images/QRCode_icon.png",
+        "url": "/pages/QRCode/QRCode",
         "name": "小程序码"
       },
       {
@@ -126,12 +127,5 @@ Page({
    */
   onReachBottom: function () {
     
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
-  }
+  } 
 })

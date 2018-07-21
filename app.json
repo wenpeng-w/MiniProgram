@@ -1,11 +1,12 @@
 {
   "pages":[
-    "pages/my/my",
+    "pages/QRCode/QRCode",
     "pages/index/index",
     "pages/home/home",
     "pages/trace/trace",
     "pages/personal/personal",
-    "pages/QRCodeResult/QRCodeResult"
+    "pages/QRCodeResult/QRCodeResult",
+    "pages/my/my"
   ],
   "window":{
     "backgroundTextStyle":"light",

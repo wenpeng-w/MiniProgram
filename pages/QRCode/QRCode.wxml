@@ -1,0 +1,15 @@
+<!--pages/QRCode/QRCode.wxml-->
+<view class='container QRCode-page'>
+  <view class='info-content'>
+    <view class='info-head'>
+      <image class='avatar' src='{{miniProgramInfo.pic}}'></image>
+      <view>
+        <text class='name'>{{miniProgramInfo.name}}</text>
+        <text class='slogan'>{{miniProgramInfo.slogan}}</text> 
+      </view>
+    </view>
+    <image class='QRCode-pic' src='{{miniProgramInfo.QRCodePic}}'></image>
+    <text class='tips'>用微信扫小程序码，查看小程序</text>
+    <button class='share-button' open-type='share' plain='{{plain}}' type='{{primary}}'>分享小程序</button>
+  </view>
+</view>

@@ -28,7 +28,7 @@
     </navigator>
   </view>
   <view class="list-panel">
-    <navigator wx:for="{{list_03}}" wx:key="index" hover-start-time="50" hover-stay-time="300" hover-class="hover-item" class="item">
+    <navigator url="{{item.url}}" wx:for="{{list_03}}" wx:key="index" hover-start-time="50" hover-stay-time="300" hover-class="hover-item" class="item">
       <view class="item-inner">
         <image class="item-icon" src="{{item.iconUrl}}"></image>
         <text class="item-title">{{item.name}}</text>
