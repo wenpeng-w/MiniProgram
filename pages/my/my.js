@@ -1,3 +1,6 @@
+//my.js
+const app = getApp()
+
 Page({
 
   /**
@@ -73,14 +76,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.getUserInfo({
-      lang: "zh_CN",
-      success: res => {
-        this.setData({
-          "userInfo": res.userInfo
-        })
-      }
-    })
+    if (app.globalData.userInfo) {
+      this.setData({
+        userInfo: app.globalData.userInfo
+      })
+    } else {
+      wx.getUserInfo({
+        lang: "zh_CN",
+        withCredentials: false,
+        success: res => {
+          app.globalData.userInfo = res.userInfo
+          this.setData({
+            userInfo: res.userInfo,
+            hasUserInfo: true
+          })
+        }
+      })
+    }
   },
   toPersonal: () => {
     wx.navigateTo({
