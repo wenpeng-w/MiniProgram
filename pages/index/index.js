@@ -15,7 +15,7 @@ Page({
   },
   onLoad: function () {
     qqmapsdk = new QQMapWX({
-      key: 'WLJBZ-FJICO-SD5W6-SHN7B-YSOXZ-XZFVP' // 开发秘钥
+      key: '**************' // 开发秘钥
     })
     // 获取用户位置
     wx.getLocation({
