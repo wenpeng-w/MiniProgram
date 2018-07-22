@@ -17,6 +17,14 @@
 .user-info {
   text-align: center;
 }
+button[plain].userInfo-btn {
+  width: 600rpx;
+  margin: 40rpx 0;
+  background-color: rgba(26, 173, 25, 0.15);
+}
+button[plain].userInfo-btn.hover-btn {
+  background-color: rgba(26, 173, 25, 0.25);
+}
 .user-avatar {
   display: block;
   width: 100rpx;
@@ -24,6 +32,10 @@
   margin: 0 auto 50rpx auto;
   border-radius: 100%;
   overflow: hidden;
+}
+.user-location {
+  height: 46rpx;
+  line-height: 46rpx;
 }
 .user-address {
   color: #333;

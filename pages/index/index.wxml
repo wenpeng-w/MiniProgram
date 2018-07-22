@@ -3,8 +3,26 @@
   <view class="origin">
     <image class='origin-pic' mode='aspectFit' src='../../images/xcx.png'></image>
     <view class='user-info'>
-      <image class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
-      <text class="user-address">{{country}} · {{city}}</text>
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" type="primary" plain="plain" lang="zh_CN" bindgetuserinfo="getUserInfo" class="userInfo-btn" hover-class="hover-btn"> 小程序授权 </button>
+      <image wx:else class='user-avatar' src='{{userInfo.avatarUrl}}'></image>
+      <!-- 获取地址 -->
+      <view wx:if="{{hasLocation}}" class="user-location">
+        <view wx:if='{{!country || !city}}' class='loading'>
+          <view class='loading-cell cell-0'></view>
+          <view class='loading-cell cell-1'></view>
+          <view class='loading-cell cell-2'></view>
+          <view class='loading-cell cell-3'></view>
+          <view class='loading-cell cell-4'></view>
+          <view class='loading-cell cell-5'></view>
+          <view class='loading-cell cell-6'></view>
+          <view class='loading-cell cell-7'></view>
+          <view class='loading-cell cell-8'></view>
+          <view class='loading-cell cell-9'></view>
+          <view class='loading-cell cell-10'></view>
+          <view class='loading-cell cell-11'></view>
+        </view>
+        <text wx:else class="user-address">{{country}} · {{city}}</text>
+      </view>
     </view>
   </view>
 </view>

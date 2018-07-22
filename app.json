@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/QRCode/QRCode",
     "pages/index/index",
     "pages/home/home",
     "pages/trace/trace",
     "pages/personal/personal",
     "pages/QRCodeResult/QRCodeResult",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/QRCode/QRCode"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -17,22 +17,20 @@
   },
   "tabBar": {
     "color": "#333333",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "iconPath": "images/qrcode.png",
-      "selectedIconPath": "images/qrcode.png",
-      "text": "小程序"
-    },{
+    "list": [
+    {
       "pagePath": "pages/home/home",
       "iconPath": "images/sy_icon.png",
       "selectedIconPath": "images/sy_icon_selected.png",
       "text": "首页"
-    },{
+    },
+    {
       "pagePath": "pages/trace/trace",
       "iconPath": "images/lx_icon.png",
       "selectedIconPath": "images/lx_icon_selected.png",
       "text": "足迹"
-    },{
+    },
+    {
       "pagePath": "pages/my/my",
       "iconPath": "images/my_icon.png",
       "selectedIconPath": "images/my_icon_selected.png",
