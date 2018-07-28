@@ -16,6 +16,8 @@
 .baseline::after {
   display: block;
   content: '';
+  position: absolute;
+  
   width: 100rpx;
   height: 0;
   border-top: 2rpx solid #999999;
