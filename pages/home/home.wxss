@@ -6,21 +6,33 @@
   color: #666;
 }
 .baseline {
-  display: block;
+  display: inline-block;
   position: relative;
   text-align: center;
-  margin: 40rpx 0;
+  width: 100%;
+  margin: 40rpx auto;
   font-size: 10pt;
   color: #999999;
 }
 .baseline::after {
-  display: block;
+  /* display: block;
   content: '';
   position: absolute;
-  
-  width: 100rpx;
+  right: -90%;
+  top: 18rpx;
+  width: 120rpx;
   height: 0;
-  border-top: 2rpx solid #999999;
+  border-top: 1rpx solid #999999; */
+}
+.baseline::before {
+  /* display: block;
+  content: '';
+  position: absolute;
+  left: -90%;
+  top: 18rpx;
+  width: 120rpx;
+  height: 0;
+  border-top: 1rpx solid #999999; */
 }
 .line2 {
   -webkit-line-clamp: 2;
@@ -81,6 +93,7 @@
   height: 100%;
   overflow: hidden;
   border-radius: 6rpx;
+  background-color: #f0f0f0;
 }
 .item-content.pic3  image:first-child {
   margin-right: 6rpx;
