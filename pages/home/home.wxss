@@ -27,7 +27,10 @@
 }
 .item-content {
   padding: 26rpx 0;
-  border-bottom: 1rpx solid #f0f0f0;
+  border-bottom: 1rpx solid #0000001a;
+}
+.arct-item:last-child .item-content{
+  border: 0;
 }
 .acrt-h2 {
   display: -webkit-box;
