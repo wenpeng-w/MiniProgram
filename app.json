@@ -26,6 +26,12 @@
     },
     {
       "pagePath": "pages/trace/trace",
+      "iconPath": "images/eye_icon.png",
+      "selectedIconPath": "images/eye_icon_selected.png",
+      "text": "发现"
+    },
+    {
+      "pagePath": "pages/trace/trace",
       "iconPath": "images/lx_icon.png",
       "selectedIconPath": "images/lx_icon_selected.png",
       "text": "足迹"
