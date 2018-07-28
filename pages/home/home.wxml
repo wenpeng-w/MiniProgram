@@ -31,5 +31,6 @@
         </view>
       </view>
     </view>
+    <text class='baseline'>我是有底线的</text>
   </view>
 </view>
