@@ -13,10 +13,44 @@ Page({
     indicatorDots: true,
     indicatorColor: '#999999',
     indicatorActiveColor: '#ffffff',
-    autoplay: false,
-    interval: 1000,
+    autoplay: true,
+    interval: 5000,
     duration: 300,
-    circular: true
+    circular: true,
+    types: [
+      {
+        iconPath: './images/chanp_icon.png',
+        name: '产品'
+      },
+      {
+        iconPath: './images/shej_icon.png',
+        name: '设计'
+      },
+      {
+        iconPath: './images/bianc_icon.png',
+        name: '编程'
+      },
+      {
+        iconPath: './images/shu_icon.png',
+        name: '读书'
+      },
+      {
+        iconPath: './images/kej_icon.png',
+        name: '科技'
+      },
+      {
+        iconPath: './images/diany_icon.png',
+        name: '影视'
+      },
+      {
+        iconPath: './images/shengh_icon.png',
+        name: '生活'
+      },
+      {
+        iconPath: './images/wujx_icon.png',
+        name: '五角星'
+      } 
+    ]
   },
 
   /**

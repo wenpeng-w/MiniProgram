@@ -19,4 +19,17 @@
       </block>
     </swiper>
   </view>
+  <view class='story-type'>
+    <view wx:for='{{types}}' wx:key='index' class='type-item'>
+      <image src='{{item.iconPath}}' class='type-icon'></image>
+      <text class='type-name'>{{item.name}}</text>
+    </view>
+  </view>
+  <view class='story-list'>
+    <view class='list-content'>
+      <view class='story-item'>
+
+      </view>
+    </view>
+  </view>
 </view>
