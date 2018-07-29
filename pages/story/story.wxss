@@ -48,9 +48,9 @@
 /* 类型 */
 .story-type {
   display: flex;
-  padding: 30rpx 0;
+  padding: 30rpx 0 0 0;
   flex-wrap: wrap;
-  /* border-top: 1rpx solid #0000001a; */
+  border-bottom: 1rpx solid #0000001a;
 }
 .type-item {
   width: 25%;
