@@ -2,6 +2,7 @@
 .startup-page {
   padding: 300rpx 0 100rpx 0;
   background-color: #ffffff;
+  height: 100%;
 }
 .origin {
   height: 100%;

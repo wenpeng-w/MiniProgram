@@ -1,7 +1,7 @@
 <!--my.wxml-->
 <view class="my-page">
   <view class="my-info-panel" bindtap="toPersonal">
-    <image class="my-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <image class="my-avatar" src="{{userInfo.avatarUrl || '../../images/my_icon.png'}}"></image>
     <view class="my-info">
       <text class="nickname">{{userInfo.nickName}}</text>
       <view class="my-location"><text>{{userInfo.province}}</text> · <text>{{userInfo.city}}</text></view>

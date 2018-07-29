@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/home/home",
-    "pages/index/index",
     "pages/trace/trace",
+    "pages/index/index",
+    "pages/home/home",
     "pages/personal/personal",
     "pages/QRCodeResult/QRCodeResult",
     "pages/my/my",
