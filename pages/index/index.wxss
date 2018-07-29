@@ -3,6 +3,7 @@
   padding: 300rpx 0 100rpx 0;
   background-color: #ffffff;
   height: 100%;
+  box-sizing: border-box;
 }
 .origin {
   height: 100%;

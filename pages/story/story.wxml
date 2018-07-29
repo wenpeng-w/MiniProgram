@@ -1,0 +1,22 @@
+<!--pages/story/story.wxml-->
+<view class='container story-page'>
+  <view class='ad-contaiber'>
+    <swiper class='ad-swiper'
+      indicatorDots='{{indicatorDots}}'
+      indicator-color='{{indicatorColor}}'
+      indicatorActiveColor='{{indicatorActiveColor}}'
+      autoplay='{{autoplay}}'
+      interval='{{interval}}'
+      duration='{{duration}}'
+      circular='{{circular}}'
+      previous-margin='30rpx'
+      next-margin='30rpx'
+      >
+      <block wx:for='{{imgUrls}}' wx:key='index'>
+        <swiper-item class='ad-slide-item'>
+          <image src='{{item}}' class='ad-slide-image' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
