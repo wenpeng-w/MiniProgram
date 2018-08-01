@@ -124,7 +124,7 @@
   padding: 0 16rpx;
   height: 48rpx;
   line-height: 48rpx;
-  background-color: #1aad19ee;
+  background-color: #1aad19dd;
   border-top-left-radius: 24rpx;
   border-bottom-right-radius: 24rpx;
   overflow: hidden;

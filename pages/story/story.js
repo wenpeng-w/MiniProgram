@@ -53,15 +53,15 @@ Page({
     ],
     storyList: [
       {
-        image: '//upload-images.jianshu.io/upload_images/4885411-3f620ebee1bb9882?imageMogr2/auto-orient/strip%7CimageView2/2/w/700',
-        title: '【设计】浅谈长图版式布局中的几种常用方法浅谈长图版式布局中的几种常用方法',
-        time: '2018.08.01 14:10',
+        image: '//upload-images.jianshu.io/upload_images/2383892-6347b474b18fae6c.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/700',
+        title: 'Google I/O带来了Material Design的7个重大更新',
+        time: '2017.12.04 17:16',
         tags: ['设计']
       },
       {
-        image: '//upload.jianshu.io/admin_banners/web_images/4358/a52cb0d0ef97a08087a234f4e25702b2471d49a4.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540',
-        title: '【设计】浅谈长图版式布局中的几种常用方法',
-        time: '2018.08.01 14:10',
+        image: '//upload-images.jianshu.io/upload_images/12655240-bbd08b46bfa1bc80.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/541',
+        title: '微信小程序凭什么能成为企业、商家流量变现竞争新宠？',
+        time: '2018.07.19 21:56',
         tags: ['产品']
       }
     ]

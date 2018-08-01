@@ -29,7 +29,7 @@
     <view class='list-content'>
       <view wx:for='{{storyList}}' wx:key='index' class='story-item'>
         <image class='story-image' src='{{item.image}}'></image>
-        <text class='story-title'>{{item.title}}</text>
+        <text class='story-title line2'>{{item.title}}</text>
         <view class='story-meta'>
           <text class='story-time'>{{item.time}}</text>
         </view>
