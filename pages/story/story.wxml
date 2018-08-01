@@ -27,8 +27,15 @@
   </view>
   <view class='story-list'>
     <view class='list-content'>
-      <view class='story-item'>
-
+      <view wx:for='{{storyList}}' wx:key='index' class='story-item'>
+        <image class='story-image' src='{{item.image}}'></image>
+        <text class='story-title'>{{item.title}}</text>
+        <view class='story-meta'>
+          <text class='story-time'>{{item.time}}</text>
+        </view>
+        <view class='story-tags'>
+          <text wx:for='{{item.tags}}' wx:key='index' class='tag'>{{item}}</text>
+        </view>
       </view>
     </view>
   </view>

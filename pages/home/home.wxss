@@ -52,10 +52,10 @@
   background-color: #fff;
 }
 .arct-item {
-  padding: 0 30rpx;
+  padding: 0 26rpx;
 }
 .item-content {
-  padding: 26rpx 0;
+  padding: 30rpx 0;
   border-bottom: 1rpx solid #0000001a;
 }
 .arct-item:last-child .item-content{
